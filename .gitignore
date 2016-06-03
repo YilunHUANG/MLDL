@@ -1,2 +1,3 @@
 #ignore all files in the previous/ directory
 previous/
+__pycache__/
