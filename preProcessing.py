@@ -8,10 +8,9 @@ scaling: compute the mean value and standard deviation in each column of X
 import numpy as np
 
 def scaling(X):
-    X = np.array(X)
-    scaledX = np.zeros(X.shape)
+    scaledX = X.copy()
 
-    x_mean = np.mean(scaledX,axis=0)
+    x_mean = np.mean(X,axis=0)
     #mean of each column in X, use axis=1 to compute row
     x_std = np.std(scaledX,axis=0)
     #standard deviation of each column in X, use axis=1 to compute row
