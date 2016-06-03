@@ -2,8 +2,14 @@ import scipy.io as sio
 import numpy as np
 import matplotlib.pyplot as plt
 
+'''
+given a 2 dimentional array
+represent them as gray scale image
+'''
+
 def representData(X,image_width):
 
+    X = np.array(X)
     m,n = X.shape
     #m: training sample number
     #n: training sample dimention
